@@ -4,6 +4,7 @@ import "./Work.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { client, urlFor } from "../client";
+import MotionWrap from "../wraper/MotionWrap";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -114,4 +115,8 @@ const Work = () => {
   );
 };
 
-export default AppWrapp(Work, "work");
+export default AppWrapp(
+  MotionWrap(Work, "app__works"),
+  "work",
+  "app__primarybg"
+);

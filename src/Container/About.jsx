@@ -4,6 +4,7 @@ import { images } from "../Constants";
 import { urlFor, client } from "../client";
 import { useEffect, useState } from "react";
 import AppWrapp from "../wraper/AppWrapp";
+import MotionWrap from "../wraper/MotionWrap";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -45,4 +46,8 @@ const About = () => {
   );
 };
 
-export default AppWrapp(About, "about");
+export default AppWrapp(
+  MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
+);
