@@ -13,7 +13,7 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <a href="https://wa.me/+8801719773079">
+        <a href="https://wa.me/+8801719773079" target="blank">
           <BsWhatsapp />
         </a>
       </div>
